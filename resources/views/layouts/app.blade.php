@@ -17,11 +17,20 @@
 
 				<h1>Reddit</h1>
 
+				<small class="pull-right">
+						<a href="{{ route('create_post_path') }}">Create Post</a>
+
+				</small>
+
 			</div>
 
 		</div>
 
 		<hr>
+
+		@include('layouts._errors')
+
+		@include('layouts._messages')
 
 		@yield('content')
 
